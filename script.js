@@ -26,7 +26,7 @@ const createAccount = async () => {
     });
 
     const data = await resp.json();
-    accNum = data.accountNumber || "BFHL0018647"; 
+    accNum = data.accountNumber || "BFHL0018699"; 
     console.log(data);
   } catch (error) {
     console.error("Error in creating account:", error.message);
@@ -38,7 +38,7 @@ const buyStocks = async () => {
     const buyBody = {
       "company": cName.value,
       "currentPrice": "1557.05",
-      "accountNumber": accNum ||"BFHL0018647" ,
+      "accountNumber": accNum ||"BFHL0018699" ,
       "githubRepoLink": "https://github.com/Singhal014/Bajaj_2110991040"
     };
     const buyBodyJson = JSON.stringify(buyBody);
@@ -47,7 +47,7 @@ const buyStocks = async () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "bfhl-auth": rollNumber.value|| "2110992107", 
+        "bfhl-auth": rollNumber.value|| "2110991040", 
       },
       body: buyBodyJson,
     });
