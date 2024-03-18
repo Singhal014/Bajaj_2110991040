@@ -39,7 +39,7 @@ const buyStocks = async () => {
       "company": cName.value,
       "currentPrice": "1557.05",
       "accountNumber": accNum ||"BFHL0018647" ,
-      "githubRepoLink": "https://github.com/rajme-git/Bajaj_2110992107"
+      "githubRepoLink": "https://github.com/Singhal014/Bajaj_2110991040"
     };
     const buyBodyJson = JSON.stringify(buyBody);
 
